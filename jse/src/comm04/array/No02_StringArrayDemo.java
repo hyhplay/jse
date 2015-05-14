@@ -8,7 +8,9 @@ public class No02_StringArrayDemo {
 			juso[2] = "광화문";*/
 			
 			String[] StringArray = {"서울","종로","광화문"};
-			
-			
+           
+			for(int i = 0; i<3;i++){
+				System.out.println(StringArray[i]);
+			}
 		}
 }

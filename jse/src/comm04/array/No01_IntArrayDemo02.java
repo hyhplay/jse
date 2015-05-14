@@ -5,6 +5,9 @@ public class No01_IntArrayDemo02 {
             int[] intArr= {100,200,300,400,500,
             		600,700,800,900,1000,1100};
 			
+            for(int i = 0 ; i < 10 ; i++){
+				System.out.println("배열출력" + intArr[i]);
+            }
 			/*intArr = new int[10];
 			intArr[0] = 100;
 			intArr[1] = 200;
