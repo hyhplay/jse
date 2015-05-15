@@ -9,7 +9,7 @@ public class No02_StringArrayDemo {
 			
 			String[] StringArray = {"서울","종로","광화문"};
            
-			for(int i = 0; i<3;i++){
+			for(int i = 0; i<StringArray.length;i++){
 				System.out.println(StringArray[i]);
 			}
 		}
