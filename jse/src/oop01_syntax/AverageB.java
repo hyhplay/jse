@@ -11,7 +11,27 @@ public class AverageB {
 		public void setName(String name){
 			this.name = name; // parameters
 		}
+		/* 점수를 저장하는 기능 */
+		public void setkor(int kor){
+			this.kor = kor;
+		}
 		
+		public void setEng(int eng){
+			this.eng = eng;
+		}
+		/* 합계를 구하는 기능*/
+		public void setSum(int kor,int eng){
+			this.tot = kor+eng;
+		}
+		/* 평균점수를 구하는 방법 */
+		public void setAvg(int tot){
+			this.avg = this.tot/2;
+		}
+		/* 평균점수를 구하는 방법 2...국어 영어점수 두개만으로 구하기 */
+		/* Overloading : 오버로딩 */
+		public void setAvg2(int kor, int eng){
+			this.avg = (kor+eng)/2;
+		}
 		
 	public static void main(String[] args) {
 		/* 객체 생생및 메모리 할당 */
@@ -56,6 +76,6 @@ public class AverageB {
 	    System.out.println("영어 :" + hawk.kor);
 	    System.out.println("합계 :" + hawk.kor);
 	    System.out.println("평균 :" + hawk.kor);
-	    
+		System.out.println();
 	}
 }
