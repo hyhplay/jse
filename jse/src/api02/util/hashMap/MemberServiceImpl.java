@@ -16,13 +16,14 @@ import java.util.Map;
 public class MemberServiceImpl implements MemberService{
 	
 	Map<String,Object> map = new HashMap<String,Object>();
+	MemberVO vo = new MemberVO();
 
 	@Override
 	public void join(String id, String password, String name, int age,
 			String addr) {
 		//1. vo 객체를 생성해서 
 		// DB에 값이 저장되는 형상을 표현한 것이다.
-		MemberVO vo = new MemberVO();
+		
 		vo.setAddr(id);
 		vo.setPassword(password);
 		vo.setName(name);
